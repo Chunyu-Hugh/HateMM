@@ -108,7 +108,6 @@ for i in tqdm(transCript):
   except:
     pass
 
-:
 
 
 len(allEmbedding)

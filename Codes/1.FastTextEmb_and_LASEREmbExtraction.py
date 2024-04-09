@@ -13,7 +13,7 @@ with open(FOLDER_NAME+'all__video_vosk_audioMap.p','rb') as fp:
 
 fastTextEmbedding ={}
 for i in transCript:
-    fastTextEmbedding[t] = ft.get_sentence_vector(transCript[i])
+    fastTextEmbedding[i] = ft.get_sentence_vector(transCript[i])
 
 
 
@@ -42,7 +42,6 @@ for i in transCript:
 embeddings = laser.embed_sentences(allTrans,
     lang='en')  # lang is only used for tokenization
 
-:
 
 
 laserEmbedding ={}
